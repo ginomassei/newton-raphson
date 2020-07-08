@@ -20,7 +20,7 @@ def newton_raphson(fn, dfn, point, dx=0.000001, dy=-1, maxiter=10):
         elif abs(xnew - point) < dx and abs(fn.subs(x, xnew)-fx) < dy:
             break
 
-        print('iteracion nro:', i) # Para ver si la operación esta tardando demasiado
+        print('Iteracion Nro.:', i) # Para ver si la operación esta tardando demasiado
 
         point = xnew
 
@@ -38,6 +38,7 @@ def main():
     # Punto inicial de aproximacion
     point = 4
 
+    # Precisión
     dx = 10**(-2)
 
     # -----------------------------------------------------------------
